@@ -62,3 +62,36 @@ C:\Users\Cheta\Downloads\IM\IM\IM\bin\Debug\System.Memory.xml
 C:\Users\Cheta\Downloads\IM\IM\IM\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Cheta\Downloads\IM\IM\IM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Cheta\Downloads\IM\IM\IM\obj\Debug\IM.csproj.CopyComplete
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\IM.exe.config
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\IM.exe
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\IM.pdb
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\EntityFramework.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Buffers.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Data.SQLite.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Memory.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\EntityFramework.xml
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Buffers.xml
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Data.SQLite.xml
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Memory.xml
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.csproj.AssemblyReference.cache
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.Addnew.resources
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.Form1.resources
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.MainForm.resources
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.MainForm2.resources
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.Properties.Resources.resources
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.rbi_records.resources
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.Signup.resources
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.csproj.GenerateResource.cache
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.csproj.CoreCompileInputs.cache
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.csproj.CopyComplete
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.exe
+C:\Users\Cheta\Desktop\Visual Studio Things\C#\IM\RBIMS\RBIMS\IM\IM\obj\Debug\IM.pdb

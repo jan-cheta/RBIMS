@@ -183,5 +183,60 @@ namespace IM
             this.Close();
             mainForm.Show();
         }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            if(housetextBox.Text.Equals("") | streettextBox.Text.Equals("") | sitiotextBox.Text.Equals("") | citytextBox.Text.Equals(""))
+            {
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string[] addressInputs = { housetextBox.Text, streettextBox.Text, sitiotextBox.Text, citytextBox.Text };
+                string address = String.Join(", ", addressInputs);
+                NewRecord newRecord = new NewRecord();
+                HouseholdCRUD householdCRUD = new HouseholdCRUD();
+                if (newRecord.validateNewHouseHold(address))
+                {
+                    householdCRUD.addHousehold(address);
+                    MessageBox.Show("Registered successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    housetextBox.Clear();
+                    streettextBox.Clear();
+                    sitiotextBox.Clear();
+                    citytextBox.Clear();
+                }
+                else
+                {
+                    MessageBox.Show(address + " already exist", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+           //TODO: CREATE DATAGRIDVIEW FOR HOUSEHOLDS FOR EASY REFERENCE FOR THE USER
+        }
+
+        private void submit2_Click(object sender, EventArgs e)
+        {
+            if(FNtextBox.Text.Equals("")|
+                MNtextBox.Text.Equals("")|
+                LNtextBox.Text.Equals("")|
+                OtextBox.Text.Equals("")|
+                DBtextBox.Text.Equals("")|
+                CScomboBox.Text.Equals("")|
+                ScomboBox.Text.Equals("")|
+                CZtextBox.Text.Equals("")|
+                CNtextBox.Text.Equals("")|
+                EAtextBox.Text.Equals("")|
+                RFcomboBox.Text.Equals("")|
+                FHcomboBox.Text.Equals("")
+                )
+            {
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                //TODO: NEED FAMILY AND HOUSEHOLD TABLE TO PICK FROM BEFORE ENTERING A NEW INHABITANT
+                //CLASSES TO BE USED FOR BACKEND: HouseholdCRUD, FamilyCRUD, InhabitantCRUD
+                //SEARCH FUNCTION NEEDED
+            }
+        }
     }
 }
