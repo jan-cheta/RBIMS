@@ -13,10 +13,28 @@ namespace IM
 {
     public partial class MainForm : Form
     {
-        
+        DataTable ListOFInhabitants = new DataTable();
+        DataTable RBI = new DataTable();
+
         public MainForm()
         {
             InitializeComponent();
+            MakeDataTable makeDataTable = new MakeDataTable();
+            DataTable inhabitantDT = makeDataTable.makeInhabitantDataTable();
+            dataGridViewList_Of_Inhabitants.DataSource = inhabitantDT;
+
+            RBI.Columns.Add("HOUSE HOLD NO.", typeof(int));
+            RBI.Columns.Add("NO. OF FAMILIES", typeof(int));
+            RBI.Columns.Add("NAME OF THE HEAD OF THE FAMILY", typeof(string));
+            RBI.Columns.Add("OCCUPATION", typeof(string));
+            RBI.Columns.Add("FAMILY HEAD BIRTHDAY", typeof(string));
+            RBI.Columns.Add("NAME OF WIFES/SPOUSE", typeof(string));
+            RBI.Columns.Add("SPOUSE OCCUPATION", typeof(string));
+            RBI.Columns.Add("WIFE/SPOUSE BIRTHDAY", typeof(string));
+            RBI.Columns.Add("NAME OF CHILDREN", typeof(string));
+            RBI.Columns.Add("CHILDREN BIRTHDAY", typeof(string));
+            RBI.Columns.Add("OCCUPATION REMARKS", typeof(string));
+            dataGridViewRBI_Record.DataSource = RBI;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -26,6 +44,9 @@ namespace IM
 
         private void label16_Click(object sender, EventArgs e)
         {
+            dataGridViewRBI_Record.Hide();
+            dataGridViewList_Of_Inhabitants.Hide();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.White;
@@ -92,6 +113,9 @@ namespace IM
 
         private void label2_Click(object sender, EventArgs e)
         {
+            dataGridViewRBI_Record.Hide();
+            dataGridViewList_Of_Inhabitants.Hide();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.White;
             label16.ForeColor = Color.Gold;
@@ -160,6 +184,9 @@ namespace IM
 
         private void label1_Click(object sender, EventArgs e)
         {
+            dataGridViewRBI_Record.Hide();
+            dataGridViewList_Of_Inhabitants.Hide();
+
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -226,6 +253,17 @@ namespace IM
 
         private void label3_Click(object sender, EventArgs e)
         {
+            MakeDataTable makeDataTable = new MakeDataTable();
+            DataTable inhabitantDT = makeDataTable.makeInhabitantDataTable();
+            dataGridViewList_Of_Inhabitants.DataSource = inhabitantDT;
+
+            dataGridViewRBI_Record.Hide();
+
+            dataGridViewList_Of_Inhabitants.Show();
+            
+
+
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -292,6 +330,12 @@ namespace IM
 
         private void label4_Click(object sender, EventArgs e)
         {
+            dataGridViewList_Of_Inhabitants.Hide();
+
+            dataGridViewRBI_Record.Show();
+            
+
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -366,6 +410,9 @@ namespace IM
 
         private void label8_Click(object sender, EventArgs e)
         {
+            dataGridViewList_Of_Inhabitants.Hide();
+            dataGridViewRBI_Record.Hide();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -449,6 +496,9 @@ namespace IM
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            dataGridViewRBI_Record.Hide();
+            dataGridViewList_Of_Inhabitants.Hide();
+
             label1.ForeColor = Color.White;
             smallbrglogo.Hide(); //48, 114
             barangaysiblot.Hide(); //353, 67
@@ -492,6 +542,9 @@ namespace IM
 
         private void label6_Click(object sender, EventArgs e)
         {
+            dataGridViewList_Of_Inhabitants.Hide();
+            dataGridViewRBI_Record.Hide();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -558,6 +611,9 @@ namespace IM
 
         private void label7_Click(object sender, EventArgs e)
         {
+            dataGridViewList_Of_Inhabitants.Hide();
+            dataGridViewRBI_Record.Hide();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -803,6 +859,8 @@ namespace IM
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            dataGridViewList_Of_Inhabitants.Show();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -876,6 +934,9 @@ namespace IM
 
         private void label9_Click(object sender, EventArgs e)
         {
+            dataGridViewList_Of_Inhabitants.Hide();
+            dataGridViewRBI_Record.Hide();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -942,6 +1003,8 @@ namespace IM
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            dataGridViewRBI_Record.Show();
+
             label1.ForeColor = Color.Gold;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -1206,6 +1269,9 @@ namespace IM
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            dataGridViewRBI_Record.Hide();
+            dataGridViewList_Of_Inhabitants.Hide();
+
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.Gold;
             label16.ForeColor = Color.Gold;
@@ -1268,6 +1334,16 @@ namespace IM
             numberadults.Hide(); //313, 556
             numbermale.Hide(); //621, 556
             numberfemale.Hide(); //930, 557
+        }
+
+        private void Bigpicture3off_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

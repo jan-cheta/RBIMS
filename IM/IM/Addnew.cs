@@ -5,17 +5,40 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IM
 {
     public partial class Addnew : Form
     {
+        
         public Addnew()
         {
             InitializeComponent();
+            reInitDataGridView();
+            inputDGV.ReadOnly = true;
+            readOnlydgv.ReadOnly = true;
+            inputDGV.MultiSelect = false; readOnlydgv.MultiSelect = false;
+
+            newHouseholdpanel.Location = new Point(360, 135);
+            newInhibitantpanel.Location = new Point(360, 135);
+            newInhibitantpanel.Hide();
+
+            roleInFamilyTB.Items.Add("SPOUSE");
+            roleInFamilyTB.Items.Add("CHILD");
+        }
+
+        private void reInitDataGridView()
+        {
+            MakeDataTable makeDataTable = new MakeDataTable();
+
+            DataTable add_household = makeDataTable.makeHouseholdDataTable();
+            inputDGV.DataSource = add_household;
+            readOnlydgv.DataSource = add_household;
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -33,136 +56,19 @@ namespace IM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            newhousehold.Text = "NEW HOUSEHOLD";
-            newhousehold.Show();
-            housetextBox.Show();
-            streettextBox.Show();
-            sitiotextBox.Show();
-            citytextBox.Show();
-            houselabel.Show();
-            streetlabel.Show();
-            sitiolabel.Show();
-            citylabel.Show();
-            submit.Show();
-
-
-            household11.Hide();
-            FNtextBox.Hide();
-            MNtextBox.Hide();
-            LNtextBox.Hide();
-            SFtextBox.Hide();
-            OtextBox.Hide();
-            DBtextBox.Hide();
-            CScomboBox.Hide();
-            ScomboBox.Hide();
-            CZtextBox.Hide();
-            CNtextBox.Hide();
-            EAtextBox.Hide();
-            FHcomboBox.Hide();
-            RFcomboBox.Hide();
-            FN.Hide();
-            MN.Hide();
-            LN.Hide();
-            SF.Hide();
-            O.Hide();
-            DB.Hide();
-            CS.Hide();
-            S.Hide();
-            CZ.Hide();
-            CN.Hide();
-            EA.Hide();
-            FH.Hide();
-            RF.Hide();
-            submit2.Hide();
+            newHouseholdpanel.Show();
+            newInhibitantpanel.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            housetextBox.Hide(); //30, 200
-            streettextBox.Hide(); //152, 201
-            sitiotextBox.Hide(); //359, 200
-            citytextBox.Hide(); //565, 200
-            houselabel.Hide();  //32, 231
-            streetlabel.Hide(); //181, 231
-            sitiolabel.Hide();  //394, 229
-            citylabel.Hide();   //579, 229
-            submit.Hide();  //357, 357
-
-            newhousehold.Text = "NEW INHABITANT";
-            household11.Show();
-            FNtextBox.Show();
-            MNtextBox.Show();
-            LNtextBox.Show();
-            SFtextBox.Show();
-            OtextBox.Show();
-            DBtextBox.Show();
-            CScomboBox.Show();
-            ScomboBox.Show();
-            CZtextBox.Show();
-            CNtextBox.Show();
-            EAtextBox.Show();
-            FHcomboBox.Show();
-            RFcomboBox.Show();
-            FN.Show();
-            MN.Show();
-            LN.Show();
-            SF.Show();
-            O.Show();
-            DB.Show();
-            CS.Show();
-            S.Show();
-            CZ.Show();
-            CN.Show();
-            EA.Show();
-            FH.Show();
-            RF.Show();
-            submit2.Show();
+            newInhibitantpanel.Show();
+            newHouseholdpanel.Hide();
         }
 
         private void Addnew_Load(object sender, EventArgs e)
         {
-            label5.ForeColor = Color.White;
-            newhousehold.Text = "NEW HOUSEHOLD";
-            newhousehold.Show();
-            housetextBox.Show();
-            streettextBox.Show();
-            sitiotextBox.Show();
-            citytextBox.Show();
-            houselabel.Show();
-            streetlabel.Show();
-            sitiolabel.Show();
-            citylabel.Show();
-            submit.Show();
-
-
-            household11.Hide();
-            FNtextBox.Hide();
-            MNtextBox.Hide();
-            LNtextBox.Hide();
-            SFtextBox.Hide();
-            OtextBox.Hide();
-            DBtextBox.Hide();
-            CScomboBox.Hide();
-            ScomboBox.Hide();
-            CZtextBox.Hide();
-            CNtextBox.Hide();
-            EAtextBox.Hide();
-            FHcomboBox.Hide();
-            RFcomboBox.Hide();
-            FN.Hide();
-            MN.Hide();
-            LN.Hide();
-            SF.Hide();
-            O.Hide();
-            DB.Hide();
-            CS.Hide();
-            S.Hide();
-            CZ.Hide();
-            CN.Hide();
-            EA.Hide();
-            FH.Hide();
-            RF.Hide();
-            submit2.Hide();
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -174,7 +80,6 @@ namespace IM
 
         private void label5_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -184,21 +89,28 @@ namespace IM
             mainForm.Show();
         }
 
-        private void submit_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            if(housetextBox.Text.Equals("") | streettextBox.Text.Equals("") | sitiotextBox.Text.Equals("") | citytextBox.Text.Equals(""))
+            newHouseholdpanel.Hide();
+            inputDGV.Show();
+        }
+
+        private void newHousholdSubmit_Click(object sender, EventArgs e)
+        {
+            if (housetextBox.Text.Equals("") | streettextBox.Text.Equals("") | sitiotextBox.Text.Equals("") | citytextBox.Text.Equals(""))
             {
                 MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 string[] addressInputs = { housetextBox.Text, streettextBox.Text, sitiotextBox.Text, citytextBox.Text };
-                string address = String.Join(", ", addressInputs);
+                string address = String.Join(", ", addressInputs).Trim(',').Trim();
                 NewRecord newRecord = new NewRecord();
                 HouseholdCRUD householdCRUD = new HouseholdCRUD();
                 if (newRecord.validateNewHouseHold(address))
                 {
                     householdCRUD.addHousehold(address);
+                    reInitDataGridView();
                     MessageBox.Show("Registered successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     housetextBox.Clear();
                     streettextBox.Clear();
@@ -210,24 +122,27 @@ namespace IM
                     MessageBox.Show(address + " already exist", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-           //TODO: CREATE DATAGRIDVIEW FOR HOUSEHOLDS FOR EASY REFERENCE FOR THE USER
         }
 
-        private void submit2_Click(object sender, EventArgs e)
+        private void newInhabitantSubmit_Click(object sender, EventArgs e)
         {
-            if(FNtextBox.Text.Equals("")|
-                MNtextBox.Text.Equals("")|
-                LNtextBox.Text.Equals("")|
-                OtextBox.Text.Equals("")|
-                DBtextBox.Text.Equals("")|
-                CScomboBox.Text.Equals("")|
-                ScomboBox.Text.Equals("")|
-                CZtextBox.Text.Equals("")|
-                CNtextBox.Text.Equals("")|
-                EAtextBox.Text.Equals("")|
-                RFcomboBox.Text.Equals("")|
-                FHcomboBox.Text.Equals("")
-                )
+            NewRecord newRecord = new NewRecord();
+            FamilyCRUD familyCRUD = new FamilyCRUD();
+            InhabitantCRUD inhabitantCRUD = new InhabitantCRUD();
+
+            if (firstNameTB.Text.Equals("") |
+               middleNameTB.Text.Equals("") |
+               lastNameTB.Text.Equals("") |
+               occupationTB.Text.Equals("") |
+               dateOfBirthTB.Text.Equals("") |
+               civilStatusCB.Text.Equals("") |
+               sexCB.Text.Equals("") |
+               citizenTB.Text.Equals("") |
+               contactNoTB.Text.Equals("") |
+               educAttainmentTB.Text.Equals("") |
+               roleInFamilyTB.Text.Equals("") |
+               inputDGV.SelectedRows.Count == 0
+               )
             {
                 MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -236,6 +151,51 @@ namespace IM
                 //TODO: NEED FAMILY AND HOUSEHOLD TABLE TO PICK FROM BEFORE ENTERING A NEW INHABITANT
                 //CLASSES TO BE USED FOR BACKEND: HouseholdCRUD, FamilyCRUD, InhabitantCRUD
                 //SEARCH FUNCTION NEEDED
+                string firstName = firstNameTB.Text.Trim(),
+                    lastName = lastNameTB.Text.Trim(),
+                    middleName = middleNameTB.Text.Trim(),
+                    suffix = suffixTB.Text.Trim(),
+                    occupation = occupationTB.Text.Trim(),
+                    civilStatus = civilStatusCB.Text.Trim(),
+                    sex = sexCB.Text.Trim(),
+                    citizenship = citizenTB.Text.Trim(),
+                    contactNo = contactNoTB.Text.Trim(),
+                    educAttainment = educAttainmentTB.Text.Trim(),
+                    headOfFamitly = familyHeadCB.Text.Trim(),
+                    roleInFamily = roleInFamilyTB.Text.Trim();
+                    string[] dateString = dateOfBirthTB.Text.Split('-');
+                DateTime dateOfBirth = new DateTime(int.Parse(dateString[0]), int.Parse(dateString[1]), int.Parse(dateString[2]));
+                int familyId, householdId = (int)inputDGV.SelectedRows[0].Cells["Household ID"].Value;
+                if (headOfFamitly.Equals("NO DATA AVAILABLE") & !roleInFamily.Equals("HEAD"))
+                {
+                    MessageBox.Show("Family Does Not Exist In Database", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if(headOfFamitly.Equals("NO DATA AVAILABLE") & roleInFamily.Equals("HEAD"))
+                {
+                    familyCRUD.addFamily(householdId);
+                    familyId = newRecord.getFamily(householdId);
+                    inhabitantCRUD.addInhabitant(firstName, lastName, middleName, suffix, occupation, dateOfBirth, sex, civilStatus, citizenship, contactNo, educAttainment, roleInFamily, "None", familyId, householdId);
+                    MessageBox.Show("Registered successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    familyId = newRecord.getHeadOfFamilyId(headOfFamitly);
+                    inhabitantCRUD.addInhabitant(firstName, lastName, middleName, suffix, occupation, dateOfBirth, sex, civilStatus, citizenship, contactNo, educAttainment, roleInFamily, "None", familyId, householdId);
+                    MessageBox.Show("Registered successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+        }
+
+        private void inputDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            familyHeadCB.Items.Clear();
+            int householdId = (int)inputDGV.SelectedRows[0].Cells["Household ID"].Value;
+            NewRecord newRecord = new NewRecord();
+            List<Inhabitant> familyHeadList = newRecord.findHeadOfFamily(householdId);
+            foreach (Inhabitant inhabitant in familyHeadList)
+            {
+                familyHeadCB.Items.Add(inhabitant.LastName + ", " + inhabitant.FirstName + " " + inhabitant.LastName);
             }
         }
     }

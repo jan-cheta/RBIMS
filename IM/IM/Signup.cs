@@ -44,7 +44,7 @@ namespace IM
                 LogIn logIn = new LogIn();
                 bool usernameIsValid = logIn.signupValidate(signup_username.Text.Trim());
 
-                if (usernameIsValid)
+                if (!usernameIsValid)
                 {
                     MessageBox.Show(signup_username.Text + " is already exist", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

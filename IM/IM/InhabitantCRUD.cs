@@ -12,7 +12,7 @@ namespace IM
        
         private string connectionString = new DBInit().connectionString;
         //Create Inhabitant 
-        public void addInhabitant(string firstName, string lastName, string middleName, string suffix, string occupation, DateTime dateOfBirth, char sex, string civilStatus, string citizenship, string contactNumber, string educationAttainment, string roleInFamily, string remarks, int familyId, int householdId){
+        public void addInhabitant(string firstName, string lastName, string middleName, string suffix, string occupation, DateTime dateOfBirth, string sex, string civilStatus, string citizenship, string contactNumber, string educationAttainment, string roleInFamily, string remarks, int familyId, int householdId){
             using (SQLiteConnection connection = new SQLiteConnection(connectionString)){
                 connection.Open();
 
@@ -74,22 +74,24 @@ namespace IM
                 using (SQLiteCommand command = new SQLiteCommand(commandText,connection))
                 using(SQLiteDataReader reader = command.ExecuteReader()){
                     while(reader.Read()){
-                        Inhabitant inhabitant = new Inhabitant{
+                        Inhabitant inhabitant = new Inhabitant
+                        {
                             InhabitantId = reader.GetInt32(0),
                             FirstName = reader.GetString(1),
                             LastName = reader.GetString(2),
                             MiddleName = reader.GetString(3),
-                            Occupation = reader.GetString(4),
-                            DateOfBirth = reader.GetDateTime(5),
-                            Sex = reader.GetChar(6),
-                            CivilStatus = reader.GetString(7),
-                            Citizenship = reader.GetString(8),
-                            ContactNumber = reader.GetString(9),
-                            RoleInFamily = reader.GetString(10),
-                            Remarks = reader.GetString(11),
-                            EducationAttainment = reader.GetString(12),
-                            FamilyId = reader.GetInt32(13),
-                            HouseholdId = reader.GetInt32(14)
+                            Suffix = reader.GetString(4),
+                            Occupation = reader.GetString(5),
+                            DateOfBirth = reader.GetDateTime(6),
+                            Sex = reader.GetString(7),
+                            CivilStatus = reader.GetString(8),
+                            Citizenship = reader.GetString(9),
+                            ContactNumber = reader.GetString(10),
+                            RoleInFamily = reader.GetString(11),
+                            Remarks = reader.GetString(12),
+                            EducationAttainment = reader.GetString(13),
+                            FamilyId = reader.GetInt32(14),
+                            HouseholdId = reader.GetInt32(15)
                         };
                         inhabitantList.Add(inhabitant);
                     }

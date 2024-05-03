@@ -37,43 +37,17 @@
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.inputDGV = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.newHouseholdpanel = new System.Windows.Forms.Panel();
+            this.readOnlydgv = new System.Windows.Forms.DataGridView();
             this.household11 = new System.Windows.Forms.Label();
-            this.RF = new System.Windows.Forms.Label();
-            this.FH = new System.Windows.Forms.Label();
-            this.submit2 = new System.Windows.Forms.Button();
-            this.RFcomboBox = new System.Windows.Forms.ComboBox();
-            this.FHcomboBox = new System.Windows.Forms.ComboBox();
-            this.ScomboBox = new System.Windows.Forms.ComboBox();
-            this.CScomboBox = new System.Windows.Forms.ComboBox();
-            this.EA = new System.Windows.Forms.Label();
-            this.CN = new System.Windows.Forms.Label();
-            this.CZ = new System.Windows.Forms.Label();
-            this.EAtextBox = new System.Windows.Forms.TextBox();
-            this.CNtextBox = new System.Windows.Forms.TextBox();
-            this.CZtextBox = new System.Windows.Forms.TextBox();
-            this.S = new System.Windows.Forms.Label();
-            this.CS = new System.Windows.Forms.Label();
-            this.DB = new System.Windows.Forms.Label();
-            this.O = new System.Windows.Forms.Label();
-            this.DBtextBox = new System.Windows.Forms.TextBox();
-            this.OtextBox = new System.Windows.Forms.TextBox();
-            this.SF = new System.Windows.Forms.Label();
-            this.LN = new System.Windows.Forms.Label();
-            this.MN = new System.Windows.Forms.Label();
-            this.FN = new System.Windows.Forms.Label();
-            this.SFtextBox = new System.Windows.Forms.TextBox();
-            this.LNtextBox = new System.Windows.Forms.TextBox();
-            this.MNtextBox = new System.Windows.Forms.TextBox();
-            this.FNtextBox = new System.Windows.Forms.TextBox();
-            this.submit = new System.Windows.Forms.Button();
+            this.newHousholdSubmit = new System.Windows.Forms.Button();
             this.citytextBox = new System.Windows.Forms.TextBox();
             this.sitiotextBox = new System.Windows.Forms.TextBox();
-            this.addnewhouse = new System.Windows.Forms.Label();
             this.norecordfound = new System.Windows.Forms.Label();
             this.citylabel = new System.Windows.Forms.Label();
             this.sitiolabel = new System.Windows.Forms.Label();
@@ -86,6 +60,42 @@
             this.x2 = new System.Windows.Forms.Label();
             this.searchbutton2 = new System.Windows.Forms.Button();
             this.searchbox2 = new System.Windows.Forms.TextBox();
+            this.newInhibitantpanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.newInhabitantSubmit = new System.Windows.Forms.Button();
+            this.roleInFamilyTB = new System.Windows.Forms.ComboBox();
+            this.familyHeadCB = new System.Windows.Forms.ComboBox();
+            this.sexCB = new System.Windows.Forms.ComboBox();
+            this.civilStatusCB = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.educAttainmentTB = new System.Windows.Forms.TextBox();
+            this.contactNoTB = new System.Windows.Forms.TextBox();
+            this.citizenTB = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dateOfBirthTB = new System.Windows.Forms.TextBox();
+            this.occupationTB = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.suffixTB = new System.Windows.Forms.TextBox();
+            this.lastNameTB = new System.Windows.Forms.TextBox();
+            this.middleNameTB = new System.Windows.Forms.TextBox();
+            this.firstNameTB = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBoxAU = new System.Windows.Forms.PictureBox();
@@ -95,9 +105,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDGV)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.newHouseholdpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.readOnlydgv)).BeginInit();
+            this.newInhibitantpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.SuspendLayout();
@@ -116,7 +129,7 @@
             this.panel1.Location = new System.Drawing.Point(-17, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 614);
+            this.panel1.Size = new System.Drawing.Size(209, 1055);
             this.panel1.TabIndex = 1;
             // 
             // panel3
@@ -197,6 +210,18 @@
             this.label5.Text = "ADD NEW RECORD";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // inputDGV
+            // 
+            this.inputDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inputDGV.Location = new System.Drawing.Point(73, 152);
+            this.inputDGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.inputDGV.Name = "inputDGV";
+            this.inputDGV.RowHeadersWidth = 62;
+            this.inputDGV.RowTemplate.Height = 28;
+            this.inputDGV.Size = new System.Drawing.Size(853, 95);
+            this.inputDGV.TabIndex = 118;
+            this.inputDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.inputDGV_CellContentClick);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -206,7 +231,7 @@
             this.panel2.Location = new System.Drawing.Point(189, -1);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(975, 48);
+            this.panel2.Size = new System.Drawing.Size(1493, 48);
             this.panel2.TabIndex = 14;
             // 
             // pictureBox2
@@ -243,346 +268,69 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "RBI MANAGEMENT SYSTEM";
             // 
-            // panel4
+            // newHouseholdpanel
             // 
-            this.panel4.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel4.Controls.Add(this.household11);
-            this.panel4.Controls.Add(this.RF);
-            this.panel4.Controls.Add(this.FH);
-            this.panel4.Controls.Add(this.submit2);
-            this.panel4.Controls.Add(this.RFcomboBox);
-            this.panel4.Controls.Add(this.FHcomboBox);
-            this.panel4.Controls.Add(this.ScomboBox);
-            this.panel4.Controls.Add(this.CScomboBox);
-            this.panel4.Controls.Add(this.EA);
-            this.panel4.Controls.Add(this.CN);
-            this.panel4.Controls.Add(this.CZ);
-            this.panel4.Controls.Add(this.EAtextBox);
-            this.panel4.Controls.Add(this.CNtextBox);
-            this.panel4.Controls.Add(this.CZtextBox);
-            this.panel4.Controls.Add(this.S);
-            this.panel4.Controls.Add(this.CS);
-            this.panel4.Controls.Add(this.DB);
-            this.panel4.Controls.Add(this.O);
-            this.panel4.Controls.Add(this.DBtextBox);
-            this.panel4.Controls.Add(this.OtextBox);
-            this.panel4.Controls.Add(this.SF);
-            this.panel4.Controls.Add(this.LN);
-            this.panel4.Controls.Add(this.MN);
-            this.panel4.Controls.Add(this.FN);
-            this.panel4.Controls.Add(this.SFtextBox);
-            this.panel4.Controls.Add(this.LNtextBox);
-            this.panel4.Controls.Add(this.MNtextBox);
-            this.panel4.Controls.Add(this.FNtextBox);
-            this.panel4.Controls.Add(this.submit);
-            this.panel4.Controls.Add(this.citytextBox);
-            this.panel4.Controls.Add(this.sitiotextBox);
-            this.panel4.Controls.Add(this.addnewhouse);
-            this.panel4.Controls.Add(this.norecordfound);
-            this.panel4.Controls.Add(this.citylabel);
-            this.panel4.Controls.Add(this.sitiolabel);
-            this.panel4.Controls.Add(this.streetlabel);
-            this.panel4.Controls.Add(this.houselabel);
-            this.panel4.Controls.Add(this.streettextBox);
-            this.panel4.Controls.Add(this.housetextBox);
-            this.panel4.Controls.Add(this.checkaddress);
-            this.panel4.Controls.Add(this.newhousehold);
-            this.panel4.Controls.Add(this.x2);
-            this.panel4.Controls.Add(this.searchbutton2);
-            this.panel4.Controls.Add(this.searchbox2);
-            this.panel4.Location = new System.Drawing.Point(452, 124);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(686, 451);
-            this.panel4.TabIndex = 15;
+            this.newHouseholdpanel.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.newHouseholdpanel.Controls.Add(this.readOnlydgv);
+            this.newHouseholdpanel.Controls.Add(this.household11);
+            this.newHouseholdpanel.Controls.Add(this.newHousholdSubmit);
+            this.newHouseholdpanel.Controls.Add(this.citytextBox);
+            this.newHouseholdpanel.Controls.Add(this.sitiotextBox);
+            this.newHouseholdpanel.Controls.Add(this.norecordfound);
+            this.newHouseholdpanel.Controls.Add(this.citylabel);
+            this.newHouseholdpanel.Controls.Add(this.sitiolabel);
+            this.newHouseholdpanel.Controls.Add(this.streetlabel);
+            this.newHouseholdpanel.Controls.Add(this.houselabel);
+            this.newHouseholdpanel.Controls.Add(this.streettextBox);
+            this.newHouseholdpanel.Controls.Add(this.housetextBox);
+            this.newHouseholdpanel.Controls.Add(this.checkaddress);
+            this.newHouseholdpanel.Controls.Add(this.newhousehold);
+            this.newHouseholdpanel.Controls.Add(this.x2);
+            this.newHouseholdpanel.Controls.Add(this.searchbutton2);
+            this.newHouseholdpanel.Controls.Add(this.searchbox2);
+            this.newHouseholdpanel.Location = new System.Drawing.Point(465, 135);
+            this.newHouseholdpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.newHouseholdpanel.Name = "newHouseholdpanel";
+            this.newHouseholdpanel.Size = new System.Drawing.Size(974, 601);
+            this.newHouseholdpanel.TabIndex = 15;
+            // 
+            // readOnlydgv
+            // 
+            this.readOnlydgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.readOnlydgv.Location = new System.Drawing.Point(18, 79);
+            this.readOnlydgv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.readOnlydgv.Name = "readOnlydgv";
+            this.readOnlydgv.RowHeadersWidth = 62;
+            this.readOnlydgv.RowTemplate.Height = 28;
+            this.readOnlydgv.Size = new System.Drawing.Size(941, 125);
+            this.readOnlydgv.TabIndex = 119;
             // 
             // household11
             // 
             this.household11.AutoSize = true;
             this.household11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.household11.Location = new System.Drawing.Point(29, 138);
+            this.household11.Location = new System.Drawing.Point(201, 403);
             this.household11.Name = "household11";
             this.household11.Size = new System.Drawing.Size(535, 16);
             this.household11.TabIndex = 117;
             this.household11.Text = "HOUSEHOLD: 11 SITIO TRAMO, BRGY. SIBLOT, SAN NICOLAS, PANGASINAN";
             // 
-            // RF
+            // newHousholdSubmit
             // 
-            this.RF.AutoSize = true;
-            this.RF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RF.Location = new System.Drawing.Point(421, 342);
-            this.RF.Name = "RF";
-            this.RF.Size = new System.Drawing.Size(119, 16);
-            this.RF.TabIndex = 116;
-            this.RF.Text = "ROLE IN FAMILY";
-            // 
-            // FH
-            // 
-            this.FH.AutoSize = true;
-            this.FH.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FH.Location = new System.Drawing.Point(174, 342);
-            this.FH.Name = "FH";
-            this.FH.Size = new System.Drawing.Size(102, 16);
-            this.FH.TabIndex = 115;
-            this.FH.Text = "FAMILY HEAD";
-            // 
-            // submit2
-            // 
-            this.submit2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.submit2.ForeColor = System.Drawing.Color.White;
-            this.submit2.Location = new System.Drawing.Point(307, 355);
-            this.submit2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.submit2.Name = "submit2";
-            this.submit2.Size = new System.Drawing.Size(82, 34);
-            this.submit2.TabIndex = 114;
-            this.submit2.Text = "SUBMIT";
-            this.submit2.UseVisualStyleBackColor = false;
-            this.submit2.Click += new System.EventHandler(this.submit2_Click);
-            // 
-            // RFcomboBox
-            // 
-            this.RFcomboBox.FormattingEnabled = true;
-            this.RFcomboBox.Location = new System.Drawing.Point(357, 314);
-            this.RFcomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RFcomboBox.Name = "RFcomboBox";
-            this.RFcomboBox.Size = new System.Drawing.Size(230, 24);
-            this.RFcomboBox.TabIndex = 113;
-            this.RFcomboBox.Text = "HEAD OF THE FAMILY";
-            // 
-            // FHcomboBox
-            // 
-            this.FHcomboBox.FormattingEnabled = true;
-            this.FHcomboBox.Location = new System.Drawing.Point(111, 314);
-            this.FHcomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FHcomboBox.Name = "FHcomboBox";
-            this.FHcomboBox.Size = new System.Drawing.Size(230, 24);
-            this.FHcomboBox.TabIndex = 112;
-            this.FHcomboBox.Text = "NO DATA AVAILABLE";
-            // 
-            // ScomboBox
-            // 
-            this.ScomboBox.FormattingEnabled = true;
-            this.ScomboBox.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.ScomboBox.Location = new System.Drawing.Point(608, 214);
-            this.ScomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ScomboBox.Name = "ScomboBox";
-            this.ScomboBox.Size = new System.Drawing.Size(42, 24);
-            this.ScomboBox.TabIndex = 111;
-            this.ScomboBox.Text = "M";
-            // 
-            // CScomboBox
-            // 
-            this.CScomboBox.FormattingEnabled = true;
-            this.CScomboBox.Items.AddRange(new object[] {
-            "SINGLE",
-            "MARRIED"});
-            this.CScomboBox.Location = new System.Drawing.Point(415, 214);
-            this.CScomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CScomboBox.Name = "CScomboBox";
-            this.CScomboBox.Size = new System.Drawing.Size(171, 24);
-            this.CScomboBox.TabIndex = 110;
-            this.CScomboBox.Text = "SINGLE";
-            // 
-            // EA
-            // 
-            this.EA.AutoSize = true;
-            this.EA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EA.Location = new System.Drawing.Point(475, 286);
-            this.EA.Name = "EA";
-            this.EA.Size = new System.Drawing.Size(149, 16);
-            this.EA.TabIndex = 109;
-            this.EA.Text = "EDUC. ATTAINMENT";
-            // 
-            // CN
-            // 
-            this.CN.AutoSize = true;
-            this.CN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CN.Location = new System.Drawing.Point(260, 288);
-            this.CN.Name = "CN";
-            this.CN.Size = new System.Drawing.Size(107, 16);
-            this.CN.TabIndex = 108;
-            this.CN.Text = "CONTACT NO.";
-            // 
-            // CZ
-            // 
-            this.CZ.AutoSize = true;
-            this.CZ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CZ.Location = new System.Drawing.Point(62, 288);
-            this.CZ.Name = "CZ";
-            this.CZ.Size = new System.Drawing.Size(96, 16);
-            this.CZ.TabIndex = 107;
-            this.CZ.Text = "CITIZENSHIP";
-            // 
-            // EAtextBox
-            // 
-            this.EAtextBox.Location = new System.Drawing.Point(415, 262);
-            this.EAtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EAtextBox.Name = "EAtextBox";
-            this.EAtextBox.Size = new System.Drawing.Size(235, 22);
-            this.EAtextBox.TabIndex = 105;
-            // 
-            // CNtextBox
-            // 
-            this.CNtextBox.Location = new System.Drawing.Point(220, 262);
-            this.CNtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CNtextBox.Name = "CNtextBox";
-            this.CNtextBox.Size = new System.Drawing.Size(171, 22);
-            this.CNtextBox.TabIndex = 104;
-            // 
-            // CZtextBox
-            // 
-            this.CZtextBox.Location = new System.Drawing.Point(30, 262);
-            this.CZtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CZtextBox.Name = "CZtextBox";
-            this.CZtextBox.Size = new System.Drawing.Size(171, 22);
-            this.CZtextBox.TabIndex = 103;
-            // 
-            // S
-            // 
-            this.S.AutoSize = true;
-            this.S.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.S.Location = new System.Drawing.Point(614, 238);
-            this.S.Name = "S";
-            this.S.Size = new System.Drawing.Size(33, 16);
-            this.S.TabIndex = 102;
-            this.S.Text = "SEX";
-            // 
-            // CS
-            // 
-            this.CS.AutoSize = true;
-            this.CS.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CS.Location = new System.Drawing.Point(457, 238);
-            this.CS.Name = "CS";
-            this.CS.Size = new System.Drawing.Size(104, 16);
-            this.CS.TabIndex = 101;
-            this.CS.Text = "CIVIL STATUS";
-            // 
-            // DB
-            // 
-            this.DB.AutoSize = true;
-            this.DB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB.Location = new System.Drawing.Point(256, 239);
-            this.DB.Name = "DB";
-            this.DB.Size = new System.Drawing.Size(116, 16);
-            this.DB.TabIndex = 100;
-            this.DB.Text = "DATE OF BIRTH";
-            // 
-            // O
-            // 
-            this.O.AutoSize = true;
-            this.O.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.O.Location = new System.Drawing.Point(62, 239);
-            this.O.Name = "O";
-            this.O.Size = new System.Drawing.Size(103, 16);
-            this.O.TabIndex = 99;
-            this.O.Text = "OCCUPATION";
-            // 
-            // DBtextBox
-            // 
-            this.DBtextBox.Location = new System.Drawing.Point(220, 214);
-            this.DBtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DBtextBox.Name = "DBtextBox";
-            this.DBtextBox.Size = new System.Drawing.Size(171, 22);
-            this.DBtextBox.TabIndex = 96;
-            // 
-            // OtextBox
-            // 
-            this.OtextBox.Location = new System.Drawing.Point(30, 214);
-            this.OtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.OtextBox.Name = "OtextBox";
-            this.OtextBox.Size = new System.Drawing.Size(168, 22);
-            this.OtextBox.TabIndex = 95;
-            // 
-            // SF
-            // 
-            this.SF.AutoSize = true;
-            this.SF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SF.Location = new System.Drawing.Point(602, 187);
-            this.SF.Name = "SF";
-            this.SF.Size = new System.Drawing.Size(55, 16);
-            this.SF.TabIndex = 94;
-            this.SF.Text = "SUFFIX";
-            // 
-            // LN
-            // 
-            this.LN.AutoSize = true;
-            this.LN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LN.Location = new System.Drawing.Point(454, 186);
-            this.LN.Name = "LN";
-            this.LN.Size = new System.Drawing.Size(89, 16);
-            this.LN.TabIndex = 93;
-            this.LN.Text = "LAST NAME";
-            // 
-            // MN
-            // 
-            this.MN.AutoSize = true;
-            this.MN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MN.Location = new System.Drawing.Point(257, 187);
-            this.MN.Name = "MN";
-            this.MN.Size = new System.Drawing.Size(106, 16);
-            this.MN.TabIndex = 92;
-            this.MN.Text = "MIDDLE NAME";
-            // 
-            // FN
-            // 
-            this.FN.AutoSize = true;
-            this.FN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FN.Location = new System.Drawing.Point(60, 187);
-            this.FN.Name = "FN";
-            this.FN.Size = new System.Drawing.Size(93, 16);
-            this.FN.TabIndex = 91;
-            this.FN.Text = "FIRST NAME";
-            // 
-            // SFtextBox
-            // 
-            this.SFtextBox.Location = new System.Drawing.Point(608, 161);
-            this.SFtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SFtextBox.Name = "SFtextBox";
-            this.SFtextBox.Size = new System.Drawing.Size(42, 22);
-            this.SFtextBox.TabIndex = 90;
-            // 
-            // LNtextBox
-            // 
-            this.LNtextBox.Location = new System.Drawing.Point(414, 163);
-            this.LNtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LNtextBox.Name = "LNtextBox";
-            this.LNtextBox.Size = new System.Drawing.Size(171, 22);
-            this.LNtextBox.TabIndex = 89;
-            // 
-            // MNtextBox
-            // 
-            this.MNtextBox.Location = new System.Drawing.Point(218, 162);
-            this.MNtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MNtextBox.Name = "MNtextBox";
-            this.MNtextBox.Size = new System.Drawing.Size(171, 22);
-            this.MNtextBox.TabIndex = 88;
-            // 
-            // FNtextBox
-            // 
-            this.FNtextBox.Location = new System.Drawing.Point(28, 162);
-            this.FNtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FNtextBox.Name = "FNtextBox";
-            this.FNtextBox.Size = new System.Drawing.Size(171, 22);
-            this.FNtextBox.TabIndex = 87;
-            // 
-            // submit
-            // 
-            this.submit.BackColor = System.Drawing.Color.RoyalBlue;
-            this.submit.ForeColor = System.Drawing.Color.White;
-            this.submit.Location = new System.Drawing.Point(307, 286);
-            this.submit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(82, 34);
-            this.submit.TabIndex = 86;
-            this.submit.Text = "SUBMIT";
-            this.submit.UseVisualStyleBackColor = false;
-            this.submit.Click += new System.EventHandler(this.submit_Click);
+            this.newHousholdSubmit.BackColor = System.Drawing.Color.RoyalBlue;
+            this.newHousholdSubmit.ForeColor = System.Drawing.Color.White;
+            this.newHousholdSubmit.Location = new System.Drawing.Point(456, 507);
+            this.newHousholdSubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.newHousholdSubmit.Name = "newHousholdSubmit";
+            this.newHousholdSubmit.Size = new System.Drawing.Size(82, 34);
+            this.newHousholdSubmit.TabIndex = 86;
+            this.newHousholdSubmit.Text = "SUBMIT";
+            this.newHousholdSubmit.UseVisualStyleBackColor = false;
+            this.newHousholdSubmit.Click += new System.EventHandler(this.newHousholdSubmit_Click);
             // 
             // citytextBox
             // 
-            this.citytextBox.Location = new System.Drawing.Point(502, 160);
+            this.citytextBox.Location = new System.Drawing.Point(674, 425);
             this.citytextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.citytextBox.Name = "citytextBox";
             this.citytextBox.Size = new System.Drawing.Size(166, 22);
@@ -590,23 +338,11 @@
             // 
             // sitiotextBox
             // 
-            this.sitiotextBox.Location = new System.Drawing.Point(319, 160);
+            this.sitiotextBox.Location = new System.Drawing.Point(491, 425);
             this.sitiotextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sitiotextBox.Name = "sitiotextBox";
             this.sitiotextBox.Size = new System.Drawing.Size(166, 22);
             this.sitiotextBox.TabIndex = 84;
-            // 
-            // addnewhouse
-            // 
-            this.addnewhouse.AutoSize = true;
-            this.addnewhouse.BackColor = System.Drawing.Color.Transparent;
-            this.addnewhouse.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addnewhouse.ForeColor = System.Drawing.Color.Black;
-            this.addnewhouse.Location = new System.Drawing.Point(269, 106);
-            this.addnewhouse.Name = "addnewhouse";
-            this.addnewhouse.Size = new System.Drawing.Size(147, 14);
-            this.addnewhouse.TabIndex = 83;
-            this.addnewhouse.Text = "ADD NEW HOUSEHOLD";
             // 
             // norecordfound
             // 
@@ -614,7 +350,7 @@
             this.norecordfound.BackColor = System.Drawing.Color.Transparent;
             this.norecordfound.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.norecordfound.ForeColor = System.Drawing.Color.Black;
-            this.norecordfound.Location = new System.Drawing.Point(281, 91);
+            this.norecordfound.Location = new System.Drawing.Point(451, 54);
             this.norecordfound.Name = "norecordfound";
             this.norecordfound.Size = new System.Drawing.Size(134, 14);
             this.norecordfound.TabIndex = 82;
@@ -626,7 +362,7 @@
             this.citylabel.BackColor = System.Drawing.Color.Transparent;
             this.citylabel.Font = new System.Drawing.Font("Leelawadee UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.citylabel.ForeColor = System.Drawing.Color.Black;
-            this.citylabel.Location = new System.Drawing.Point(515, 183);
+            this.citylabel.Location = new System.Drawing.Point(687, 448);
             this.citylabel.Name = "citylabel";
             this.citylabel.Size = new System.Drawing.Size(143, 19);
             this.citylabel.TabIndex = 81;
@@ -638,7 +374,7 @@
             this.sitiolabel.BackColor = System.Drawing.Color.Transparent;
             this.sitiolabel.Font = new System.Drawing.Font("Leelawadee UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sitiolabel.ForeColor = System.Drawing.Color.Black;
-            this.sitiolabel.Location = new System.Drawing.Point(350, 183);
+            this.sitiolabel.Location = new System.Drawing.Point(522, 448);
             this.sitiolabel.Name = "sitiolabel";
             this.sitiolabel.Size = new System.Drawing.Size(98, 19);
             this.sitiolabel.TabIndex = 80;
@@ -650,7 +386,7 @@
             this.streetlabel.BackColor = System.Drawing.Color.Transparent;
             this.streetlabel.Font = new System.Drawing.Font("Leelawadee UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.streetlabel.ForeColor = System.Drawing.Color.Black;
-            this.streetlabel.Location = new System.Drawing.Point(161, 186);
+            this.streetlabel.Location = new System.Drawing.Point(333, 451);
             this.streetlabel.Name = "streetlabel";
             this.streetlabel.Size = new System.Drawing.Size(122, 19);
             this.streetlabel.TabIndex = 79;
@@ -662,7 +398,7 @@
             this.houselabel.BackColor = System.Drawing.Color.Transparent;
             this.houselabel.Font = new System.Drawing.Font("Leelawadee UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.houselabel.ForeColor = System.Drawing.Color.Black;
-            this.houselabel.Location = new System.Drawing.Point(28, 185);
+            this.houselabel.Location = new System.Drawing.Point(200, 450);
             this.houselabel.Name = "houselabel";
             this.houselabel.Size = new System.Drawing.Size(86, 19);
             this.houselabel.TabIndex = 78;
@@ -670,7 +406,7 @@
             // 
             // streettextBox
             // 
-            this.streettextBox.Location = new System.Drawing.Point(135, 161);
+            this.streettextBox.Location = new System.Drawing.Point(307, 426);
             this.streettextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.streettextBox.Name = "streettextBox";
             this.streettextBox.Size = new System.Drawing.Size(166, 22);
@@ -678,7 +414,7 @@
             // 
             // housetextBox
             // 
-            this.housetextBox.Location = new System.Drawing.Point(27, 160);
+            this.housetextBox.Location = new System.Drawing.Point(199, 425);
             this.housetextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.housetextBox.Name = "housetextBox";
             this.housetextBox.Size = new System.Drawing.Size(89, 22);
@@ -690,7 +426,7 @@
             this.checkaddress.BackColor = System.Drawing.Color.Transparent;
             this.checkaddress.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkaddress.ForeColor = System.Drawing.Color.Black;
-            this.checkaddress.Location = new System.Drawing.Point(101, 69);
+            this.checkaddress.Location = new System.Drawing.Point(271, 32);
             this.checkaddress.Name = "checkaddress";
             this.checkaddress.Size = new System.Drawing.Size(114, 14);
             this.checkaddress.TabIndex = 73;
@@ -702,7 +438,7 @@
             this.newhousehold.BackColor = System.Drawing.Color.RoyalBlue;
             this.newhousehold.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newhousehold.ForeColor = System.Drawing.Color.White;
-            this.newhousehold.Location = new System.Drawing.Point(211, 16);
+            this.newhousehold.Location = new System.Drawing.Point(368, 348);
             this.newhousehold.Name = "newhousehold";
             this.newhousehold.Size = new System.Drawing.Size(280, 41);
             this.newhousehold.TabIndex = 72;
@@ -712,7 +448,7 @@
             // 
             this.x2.AutoSize = true;
             this.x2.BackColor = System.Drawing.Color.White;
-            this.x2.Location = new System.Drawing.Point(444, 68);
+            this.x2.Location = new System.Drawing.Point(614, 31);
             this.x2.Name = "x2";
             this.x2.Size = new System.Drawing.Size(13, 16);
             this.x2.TabIndex = 71;
@@ -723,7 +459,7 @@
             this.searchbutton2.BackColor = System.Drawing.Color.RoyalBlue;
             this.searchbutton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchbutton2.ForeColor = System.Drawing.Color.White;
-            this.searchbutton2.Location = new System.Drawing.Point(477, 62);
+            this.searchbutton2.Location = new System.Drawing.Point(647, 25);
             this.searchbutton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchbutton2.Name = "searchbutton2";
             this.searchbutton2.Size = new System.Drawing.Size(76, 27);
@@ -734,11 +470,409 @@
             // searchbox2
             // 
             this.searchbox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchbox2.Location = new System.Drawing.Point(228, 66);
+            this.searchbox2.Location = new System.Drawing.Point(398, 29);
             this.searchbox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchbox2.Name = "searchbox2";
             this.searchbox2.Size = new System.Drawing.Size(235, 22);
             this.searchbox2.TabIndex = 69;
+            // 
+            // newInhibitantpanel
+            // 
+            this.newInhibitantpanel.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.newInhibitantpanel.Controls.Add(this.label1);
+            this.newInhibitantpanel.Controls.Add(this.inputDGV);
+            this.newInhibitantpanel.Controls.Add(this.label2);
+            this.newInhibitantpanel.Controls.Add(this.label3);
+            this.newInhibitantpanel.Controls.Add(this.newInhabitantSubmit);
+            this.newInhibitantpanel.Controls.Add(this.roleInFamilyTB);
+            this.newInhibitantpanel.Controls.Add(this.familyHeadCB);
+            this.newInhibitantpanel.Controls.Add(this.sexCB);
+            this.newInhibitantpanel.Controls.Add(this.civilStatusCB);
+            this.newInhibitantpanel.Controls.Add(this.label4);
+            this.newInhibitantpanel.Controls.Add(this.label6);
+            this.newInhibitantpanel.Controls.Add(this.label7);
+            this.newInhibitantpanel.Controls.Add(this.educAttainmentTB);
+            this.newInhibitantpanel.Controls.Add(this.contactNoTB);
+            this.newInhibitantpanel.Controls.Add(this.citizenTB);
+            this.newInhibitantpanel.Controls.Add(this.label8);
+            this.newInhibitantpanel.Controls.Add(this.label9);
+            this.newInhibitantpanel.Controls.Add(this.label10);
+            this.newInhibitantpanel.Controls.Add(this.label11);
+            this.newInhibitantpanel.Controls.Add(this.dateOfBirthTB);
+            this.newInhibitantpanel.Controls.Add(this.occupationTB);
+            this.newInhibitantpanel.Controls.Add(this.label12);
+            this.newInhibitantpanel.Controls.Add(this.label13);
+            this.newInhibitantpanel.Controls.Add(this.label14);
+            this.newInhibitantpanel.Controls.Add(this.label16);
+            this.newInhibitantpanel.Controls.Add(this.suffixTB);
+            this.newInhibitantpanel.Controls.Add(this.lastNameTB);
+            this.newInhibitantpanel.Controls.Add(this.middleNameTB);
+            this.newInhibitantpanel.Controls.Add(this.firstNameTB);
+            this.newInhibitantpanel.Controls.Add(this.label18);
+            this.newInhibitantpanel.Controls.Add(this.label19);
+            this.newInhibitantpanel.Controls.Add(this.label26);
+            this.newInhibitantpanel.Controls.Add(this.label27);
+            this.newInhibitantpanel.Controls.Add(this.label28);
+            this.newInhibitantpanel.Controls.Add(this.button5);
+            this.newInhibitantpanel.Controls.Add(this.textBox14);
+            this.newInhibitantpanel.Location = new System.Drawing.Point(630, 98);
+            this.newInhibitantpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.newInhibitantpanel.Name = "newInhibitantpanel";
+            this.newInhibitantpanel.Size = new System.Drawing.Size(970, 700);
+            this.newInhibitantpanel.TabIndex = 118;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(343, 273);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(354, 41);
+            this.label1.TabIndex = 119;
+            this.label1.Text = "NEW INHIBITANT INFO";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(705, 589);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 16);
+            this.label2.TabIndex = 116;
+            this.label2.Text = "ROLE IN FAMILY";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(268, 589);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 16);
+            this.label3.TabIndex = 115;
+            this.label3.Text = "FAMILY HEAD";
+            // 
+            // newInhabitantSubmit
+            // 
+            this.newInhabitantSubmit.BackColor = System.Drawing.Color.RoyalBlue;
+            this.newInhabitantSubmit.ForeColor = System.Drawing.Color.White;
+            this.newInhabitantSubmit.Location = new System.Drawing.Point(483, 629);
+            this.newInhabitantSubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.newInhabitantSubmit.Name = "newInhabitantSubmit";
+            this.newInhabitantSubmit.Size = new System.Drawing.Size(82, 34);
+            this.newInhabitantSubmit.TabIndex = 114;
+            this.newInhabitantSubmit.Text = "SUBMIT";
+            this.newInhabitantSubmit.UseVisualStyleBackColor = false;
+            this.newInhabitantSubmit.Click += new System.EventHandler(this.newInhabitantSubmit_Click);
+            // 
+            // roleInFamilyTB
+            // 
+            this.roleInFamilyTB.FormattingEnabled = true;
+            this.roleInFamilyTB.Location = new System.Drawing.Point(641, 561);
+            this.roleInFamilyTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roleInFamilyTB.Name = "roleInFamilyTB";
+            this.roleInFamilyTB.Size = new System.Drawing.Size(230, 24);
+            this.roleInFamilyTB.TabIndex = 113;
+            this.roleInFamilyTB.Text = "HEAD";
+            // 
+            // familyHeadCB
+            // 
+            this.familyHeadCB.FormattingEnabled = true;
+            this.familyHeadCB.Location = new System.Drawing.Point(205, 561);
+            this.familyHeadCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.familyHeadCB.Name = "familyHeadCB";
+            this.familyHeadCB.Size = new System.Drawing.Size(230, 24);
+            this.familyHeadCB.TabIndex = 112;
+            this.familyHeadCB.Text = "NO DATA AVAILABLE";
+            // 
+            // sexCB
+            // 
+            this.sexCB.FormattingEnabled = true;
+            this.sexCB.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.sexCB.Location = new System.Drawing.Point(798, 436);
+            this.sexCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sexCB.Name = "sexCB";
+            this.sexCB.Size = new System.Drawing.Size(42, 24);
+            this.sexCB.TabIndex = 111;
+            this.sexCB.Text = "M";
+            // 
+            // civilStatusCB
+            // 
+            this.civilStatusCB.FormattingEnabled = true;
+            this.civilStatusCB.Items.AddRange(new object[] {
+            "SINGLE",
+            "MARRIED"});
+            this.civilStatusCB.Location = new System.Drawing.Point(605, 436);
+            this.civilStatusCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.civilStatusCB.Name = "civilStatusCB";
+            this.civilStatusCB.Size = new System.Drawing.Size(171, 24);
+            this.civilStatusCB.TabIndex = 110;
+            this.civilStatusCB.Text = "SINGLE";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(685, 517);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(149, 16);
+            this.label4.TabIndex = 109;
+            this.label4.Text = "EDUC. ATTAINMENT";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(476, 519);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 16);
+            this.label6.TabIndex = 108;
+            this.label6.Text = "CONTACT NO.";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(250, 519);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 16);
+            this.label7.TabIndex = 107;
+            this.label7.Text = "CITIZENSHIP";
+            // 
+            // educAttainmentTB
+            // 
+            this.educAttainmentTB.Location = new System.Drawing.Point(625, 493);
+            this.educAttainmentTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.educAttainmentTB.Name = "educAttainmentTB";
+            this.educAttainmentTB.Size = new System.Drawing.Size(235, 22);
+            this.educAttainmentTB.TabIndex = 105;
+            // 
+            // contactNoTB
+            // 
+            this.contactNoTB.Location = new System.Drawing.Point(436, 493);
+            this.contactNoTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.contactNoTB.Name = "contactNoTB";
+            this.contactNoTB.Size = new System.Drawing.Size(171, 22);
+            this.contactNoTB.TabIndex = 104;
+            // 
+            // citizenTB
+            // 
+            this.citizenTB.Location = new System.Drawing.Point(218, 493);
+            this.citizenTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.citizenTB.Name = "citizenTB";
+            this.citizenTB.Size = new System.Drawing.Size(171, 22);
+            this.citizenTB.TabIndex = 103;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(804, 460);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 16);
+            this.label8.TabIndex = 102;
+            this.label8.Text = "SEX";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(647, 460);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 16);
+            this.label9.TabIndex = 101;
+            this.label9.Text = "CIVIL STATUS";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(447, 461);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(116, 16);
+            this.label10.TabIndex = 100;
+            this.label10.Text = "DATE OF BIRTH";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(253, 461);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(103, 16);
+            this.label11.TabIndex = 99;
+            this.label11.Text = "OCCUPATION";
+            // 
+            // dateOfBirthTB
+            // 
+            this.dateOfBirthTB.Location = new System.Drawing.Point(411, 436);
+            this.dateOfBirthTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateOfBirthTB.Name = "dateOfBirthTB";
+            this.dateOfBirthTB.Size = new System.Drawing.Size(171, 22);
+            this.dateOfBirthTB.TabIndex = 96;
+            // 
+            // occupationTB
+            // 
+            this.occupationTB.Location = new System.Drawing.Point(221, 436);
+            this.occupationTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.occupationTB.Name = "occupationTB";
+            this.occupationTB.Size = new System.Drawing.Size(168, 22);
+            this.occupationTB.TabIndex = 95;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(816, 392);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 16);
+            this.label12.TabIndex = 94;
+            this.label12.Text = "SUFFIX";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(674, 392);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 16);
+            this.label13.TabIndex = 93;
+            this.label13.Text = "LAST NAME";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(455, 392);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(106, 16);
+            this.label14.TabIndex = 92;
+            this.label14.Text = "MIDDLE NAME";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(252, 392);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(93, 16);
+            this.label16.TabIndex = 91;
+            this.label16.Text = "FIRST NAME";
+            // 
+            // suffixTB
+            // 
+            this.suffixTB.Location = new System.Drawing.Point(819, 356);
+            this.suffixTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.suffixTB.Name = "suffixTB";
+            this.suffixTB.Size = new System.Drawing.Size(42, 22);
+            this.suffixTB.TabIndex = 90;
+            // 
+            // lastNameTB
+            // 
+            this.lastNameTB.Location = new System.Drawing.Point(614, 356);
+            this.lastNameTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lastNameTB.Name = "lastNameTB";
+            this.lastNameTB.Size = new System.Drawing.Size(171, 22);
+            this.lastNameTB.TabIndex = 89;
+            // 
+            // middleNameTB
+            // 
+            this.middleNameTB.Location = new System.Drawing.Point(416, 356);
+            this.middleNameTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.middleNameTB.Name = "middleNameTB";
+            this.middleNameTB.Size = new System.Drawing.Size(171, 22);
+            this.middleNameTB.TabIndex = 88;
+            // 
+            // firstNameTB
+            // 
+            this.firstNameTB.Location = new System.Drawing.Point(218, 356);
+            this.firstNameTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.firstNameTB.Name = "firstNameTB";
+            this.firstNameTB.Size = new System.Drawing.Size(171, 22);
+            this.firstNameTB.TabIndex = 87;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(412, 127);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(147, 14);
+            this.label18.TabIndex = 83;
+            this.label18.Text = "ADD NEW HOUSEHOLD";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(424, 112);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(134, 14);
+            this.label19.TabIndex = 82;
+            this.label19.Text = "NO RECORD FOUND.";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(244, 90);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(114, 14);
+            this.label26.TabIndex = 73;
+            this.label26.Text = "CHECK ADDRESS";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label27.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(354, 37);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(331, 41);
+            this.label27.TabIndex = 72;
+            this.label27.Text = "CHOOSE HOUSEHOLD";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(587, 89);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(13, 16);
+            this.label28.TabIndex = 71;
+            this.label28.Text = "x";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(620, 83);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(76, 27);
+            this.button5.TabIndex = 70;
+            this.button5.Text = "SEARCH";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox14.Location = new System.Drawing.Point(371, 87);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(235, 22);
+            this.textBox14.TabIndex = 69;
             // 
             // button1
             // 
@@ -787,7 +921,7 @@
             this.pictureBox19.Location = new System.Drawing.Point(192, 44);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(972, 569);
+            this.pictureBox19.Size = new System.Drawing.Size(1490, 1008);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 89;
             this.pictureBox19.TabStop = false;
@@ -796,11 +930,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 610);
+            this.ClientSize = new System.Drawing.Size(1680, 1050);
+            this.Controls.Add(this.newInhibitantpanel);
             this.Controls.Add(this.pictureBoxAU);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.newHouseholdpanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox19);
@@ -816,11 +951,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDGV)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.newHouseholdpanel.ResumeLayout(false);
+            this.newHouseholdpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.readOnlydgv)).EndInit();
+            this.newInhibitantpanel.ResumeLayout(false);
+            this.newInhibitantpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAU)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.ResumeLayout(false);
@@ -838,8 +977,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label addnewhouse;
+        private System.Windows.Forms.Panel newHouseholdpanel;
         private System.Windows.Forms.Label norecordfound;
         private System.Windows.Forms.Label citylabel;
         private System.Windows.Forms.Label sitiolabel;
@@ -852,43 +990,54 @@
         private System.Windows.Forms.Label x2;
         private System.Windows.Forms.Button searchbutton2;
         private System.Windows.Forms.TextBox searchbox2;
-        private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.Button newHousholdSubmit;
         private System.Windows.Forms.TextBox citytextBox;
         private System.Windows.Forms.TextBox sitiotextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label LN;
-        private System.Windows.Forms.Label MN;
-        private System.Windows.Forms.Label FN;
-        private System.Windows.Forms.TextBox SFtextBox;
-        private System.Windows.Forms.TextBox LNtextBox;
-        private System.Windows.Forms.TextBox MNtextBox;
-        private System.Windows.Forms.TextBox FNtextBox;
-        private System.Windows.Forms.Label EA;
-        private System.Windows.Forms.Label CN;
-        private System.Windows.Forms.Label CZ;
-        private System.Windows.Forms.TextBox EAtextBox;
-        private System.Windows.Forms.TextBox CNtextBox;
-        private System.Windows.Forms.TextBox CZtextBox;
-        private System.Windows.Forms.Label S;
-        private System.Windows.Forms.Label CS;
-        private System.Windows.Forms.Label DB;
-        private System.Windows.Forms.Label O;
-        private System.Windows.Forms.TextBox DBtextBox;
-        private System.Windows.Forms.TextBox OtextBox;
-        private System.Windows.Forms.Label SF;
-        private System.Windows.Forms.ComboBox CScomboBox;
-        private System.Windows.Forms.ComboBox RFcomboBox;
-        private System.Windows.Forms.ComboBox FHcomboBox;
-        private System.Windows.Forms.ComboBox ScomboBox;
         private System.Windows.Forms.Label household11;
-        private System.Windows.Forms.Label RF;
-        private System.Windows.Forms.Label FH;
-        private System.Windows.Forms.Button submit2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBoxAU;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView inputDGV;
+        private System.Windows.Forms.Panel newInhibitantpanel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button newInhabitantSubmit;
+        private System.Windows.Forms.ComboBox roleInFamilyTB;
+        private System.Windows.Forms.ComboBox familyHeadCB;
+        private System.Windows.Forms.ComboBox sexCB;
+        private System.Windows.Forms.ComboBox civilStatusCB;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox educAttainmentTB;
+        private System.Windows.Forms.TextBox contactNoTB;
+        private System.Windows.Forms.TextBox citizenTB;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox dateOfBirthTB;
+        private System.Windows.Forms.TextBox occupationTB;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox suffixTB;
+        private System.Windows.Forms.TextBox lastNameTB;
+        private System.Windows.Forms.TextBox middleNameTB;
+        private System.Windows.Forms.TextBox firstNameTB;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.DataGridView readOnlydgv;
+        private System.Windows.Forms.Label label1;
     }
 }
