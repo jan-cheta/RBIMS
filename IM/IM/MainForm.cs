@@ -551,9 +551,9 @@ namespace IM
             label3.ForeColor = Color.Gold;
             label4.ForeColor = Color.Gold;
             label5.ForeColor = Color.Gold;
-            label6.ForeColor = Color.Gold;
+            label6.ForeColor = Color.White;
             label7.ForeColor = Color.Gold;
-            label8.ForeColor = Color.White;
+            label8.ForeColor = Color.Gold;
             label9.ForeColor = Color.Gold;
             label10.ForeColor = Color.Gold;
 
@@ -621,8 +621,8 @@ namespace IM
             label4.ForeColor = Color.Gold;
             label5.ForeColor = Color.Gold;
             label6.ForeColor = Color.Gold;
-            label7.ForeColor = Color.Gold;
-            label8.ForeColor = Color.White;
+            label7.ForeColor = Color.White;
+            label8.ForeColor = Color.Gold;
             label9.ForeColor = Color.Gold;
             label10.ForeColor = Color.Gold;
 
