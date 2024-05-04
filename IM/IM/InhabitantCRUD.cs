@@ -87,9 +87,9 @@ namespace IM
                             CivilStatus = reader.GetString(8),
                             Citizenship = reader.GetString(9),
                             ContactNumber = reader.GetString(10),
-                            RoleInFamily = reader.GetString(11),
-                            Remarks = reader.GetString(12),
-                            EducationAttainment = reader.GetString(13),
+                            EducationAttainment = reader.GetString(11),
+                            RoleInFamily = reader.GetString(12),
+                            Remarks = reader.GetString(13),
                             FamilyId = reader.GetInt32(14),
                             HouseholdId = reader.GetInt32(15)
                         };
