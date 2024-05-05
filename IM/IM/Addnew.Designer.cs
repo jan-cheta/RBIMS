@@ -585,6 +585,7 @@
             this.familyHeadCB.Size = new System.Drawing.Size(230, 24);
             this.familyHeadCB.TabIndex = 112;
             this.familyHeadCB.Text = "NO DATA AVAILABLE";
+            this.familyHeadCB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.familyHead_MClick);
             // 
             // sexCB
             // 

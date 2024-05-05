@@ -801,6 +801,7 @@
             this.searchbox.Name = "searchbox";
             this.searchbox.Size = new System.Drawing.Size(235, 22);
             this.searchbox.TabIndex = 53;
+            this.searchbox.TextChanged += new System.EventHandler(this.searchbox_TextChanged);
             // 
             // searchbutton
             // 
@@ -1536,7 +1537,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 610);
+            this.ClientSize = new System.Drawing.Size(1680, 1050);
             this.Controls.Add(this.dataGridViewList_Of_Inhabitants);
             this.Controls.Add(this.dataGridViewRBI_Record);
             this.Controls.Add(this.Bigpicture3off);

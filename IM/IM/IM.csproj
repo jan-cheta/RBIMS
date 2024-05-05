@@ -136,6 +136,7 @@
     <Compile Include="rbi_records.Designer.cs">
       <DependentUpon>rbi_records.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchMe.cs" />
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
     </Compile>

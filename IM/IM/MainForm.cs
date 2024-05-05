@@ -20,7 +20,8 @@ namespace IM
         {
             InitializeComponent();
             MakeDataTable makeDataTable = new MakeDataTable();
-            DataTable inhabitantDT = makeDataTable.makeInhabitantDataTable();
+            InhabitantCRUD inhabitantCRUD = new InhabitantCRUD();
+            DataTable inhabitantDT = makeDataTable.makeInhabitantDataTable(inhabitantCRUD.readInhabitant());
             dataGridViewList_Of_Inhabitants.DataSource = inhabitantDT;
 
             RBI.Columns.Add("HOUSE HOLD NO.", typeof(int));
@@ -254,7 +255,8 @@ namespace IM
         private void label3_Click(object sender, EventArgs e)
         {
             MakeDataTable makeDataTable = new MakeDataTable();
-            DataTable inhabitantDT = makeDataTable.makeInhabitantDataTable();
+            InhabitantCRUD inhabitantCRUD = new InhabitantCRUD();
+            DataTable inhabitantDT = makeDataTable.makeInhabitantDataTable(inhabitantCRUD.readInhabitant());
             dataGridViewList_Of_Inhabitants.DataSource = inhabitantDT;
 
             dataGridViewRBI_Record.Hide();
@@ -1344,6 +1346,25 @@ namespace IM
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void searchbox_TextChanged(object sender, EventArgs e)
+        {
+            MakeDataTable makeDataTable = new MakeDataTable();
+            InhabitantCRUD inhabitant = new InhabitantCRUD();
+            if (searchbox.Text.Equals(""))
+            {
+                DataTable defaultDT = makeDataTable.makeInhabitantDataTable(inhabitant.readInhabitant());
+                dataGridViewList_Of_Inhabitants.DataSource = defaultDT;
+            }
+            else
+            {
+                SearchMe searchMe = new SearchMe();
+                string searchText = searchbox.Text;
+                DataTable searchedDT = searchMe.SearchAlgorithm(searchText, inhabitant.readInhabitant());
+                dataGridViewList_Of_Inhabitants.DataSource = searchedDT;
+            }
+            
         }
     }
 }

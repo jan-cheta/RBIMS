@@ -28,6 +28,7 @@ namespace IM
             newInhibitantpanel.Location = new Point(360, 135);
             newInhibitantpanel.Hide();
 
+            roleInFamilyTB.Items.Add("HEAD");
             roleInFamilyTB.Items.Add("SPOUSE");
             roleInFamilyTB.Items.Add("CHILD");
         }
@@ -35,8 +36,8 @@ namespace IM
         private void reInitDataGridView()
         {
             MakeDataTable makeDataTable = new MakeDataTable();
-
-            DataTable add_household = makeDataTable.makeHouseholdDataTable();
+            HouseholdCRUD householdCRUD = new HouseholdCRUD();
+            DataTable add_household = makeDataTable.makeHouseholdDataTable(householdCRUD.readHousehold());
             inputDGV.DataSource = add_household;
             readOnlydgv.DataSource = add_household;
         }
@@ -97,30 +98,23 @@ namespace IM
 
         private void newHousholdSubmit_Click(object sender, EventArgs e)
         {
-            if (housetextBox.Text.Equals("") | streettextBox.Text.Equals("") | sitiotextBox.Text.Equals("") | citytextBox.Text.Equals(""))
+            if (sitiotextBox.Text.Equals(""))
             {
                 MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                string[] addressInputs = { housetextBox.Text, streettextBox.Text, sitiotextBox.Text, citytextBox.Text };
-                string address = String.Join(", ", addressInputs).Trim(',').Trim();
+                string[] addressInputs = { housetextBox.Text, streettextBox.Text, sitiotextBox.Text};
+
                 NewRecord newRecord = new NewRecord();
                 HouseholdCRUD householdCRUD = new HouseholdCRUD();
-                if (newRecord.validateNewHouseHold(address))
-                {
-                    householdCRUD.addHousehold(address);
-                    reInitDataGridView();
-                    MessageBox.Show("Registered successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    housetextBox.Clear();
-                    streettextBox.Clear();
-                    sitiotextBox.Clear();
-                    citytextBox.Clear();
-                }
-                else
-                {
-                    MessageBox.Show(address + " already exist", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                householdCRUD.addHousehold(addressInputs[0], addressInputs[1], addressInputs[2]);
+                reInitDataGridView();
+                MessageBox.Show("Registered successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                housetextBox.Clear();
+                streettextBox.Clear();
+                sitiotextBox.Clear();
+                citytextBox.Clear();
             }
         }
 
@@ -189,7 +183,13 @@ namespace IM
 
         private void inputDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void familyHead_MClick(object sender, MouseEventArgs e)
+        {
             familyHeadCB.Items.Clear();
+            familyHeadCB.Items.Add("NO DATA AVAILABLE");
             int householdId = (int)inputDGV.SelectedRows[0].Cells["Household ID"].Value;
             NewRecord newRecord = new NewRecord();
             List<Inhabitant> familyHeadList = newRecord.findHeadOfFamily(householdId);
